@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 style="text-align: center;">Student Registration Form</h2>
+    <form>
+        <center>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="captcha">Enter Captcha</label>
+                <input type="text" id="captcha" name="captcha">
+                <br>
+                <br>
+                <label for="Username">Enter Username:</label>
+                <input type="text" id="Username" name="Username">
+                <br>
+                <br>
+                <label for="password">Password</label>
+                <input type="password" id="=password" name="password">
+                <br>
+                <br>
+                <label for="number">Phone</label>
+                <input type="number" id="number" name="number">
+                <br>
+                <br>
+                <label for="website">Website</label>
+                <input type="url" id="website" name="website">
+                <br>
+                <br>
+                <label for="search">Search Course</label>
+                <input type="search" id="search" name="search">
+            </fieldset>
+            <fieldset>
+                <legend>Other Details</legend>
+                <label for="age">Enter Age</label>
+                <input type="number" id="age" name="age" min="1" max="99">
+                <br>
+                <br>
+                <label for="date">Date Of Birth</label>
+                <input type="date" id="date" name="date">
+                <br>
+                <br>
+                <label for="time">Preferred Time:</label>
+                <input type="time" id="=time" name="time">
+                <br>
+                <br>
+                <label for="Meeting">Meeting Date and Time</label>
+                <input type="datetime" id="Meeting" name="Meeting">
+                <br>
+                <br>
+                <label for="gender">gender
+                <input type="radio" id="gender" name="gender" value="male">Male</label>
+                <label>
+                <input type="radio" id="gender" name="gender"  value="female">Female</label>
+                <br>
+                <br>
+                <label for="hobby">Hobbies</label>
+                <label><input type="checkbox" name="option1">dance</label>
+                <label><input type="checkbox" name="option2">read</label>
+                <label><input type="checkbox" name="option3">play</label>
+                <label><input type="checkbox" name="option4">Cook</label>
+                
+                <br>
+                <br>
+                <label for="color">Favorite color</label>
+                <input type="color" id="color">
+                <br>
+                <br>
+                <label for="skill">Skill rating</label>
+                <input type="range" min="1" max="5">
+                <br>
+                <br>
+            </label>
+            </fieldset>
+            <fieldset>
+                <legend>Selection</legend>
+                <label for="course">Course</label>
+                <select>
+                    <option>HTML</option>
+                    <option>CSS</option>
+                    <OPTION>JS</OPTION>
+                </select>
+                <br>
+                <br>
+                <select>
+                    <option>Bengaluru</option>
+                    <option>Delhi</option>
+                    <option>Mumbai</option>
+                    <option>Hyderabad</option>
+                </select>
+                <br>
+                <br>
+                <label for="image">Upload photo</label>
+                <input type="file" accept=".jpeg,.png,.jpg">
+                <br>
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>Comments</legend>
+                <label for="comments"></label>
+                <textarea rows="5" cols="30">Write your comments</textarea>
+            </fieldset>
+            <input type="submit">&nbsp &nbsp &nbsp
+            <input type="reset" value="cancel">
+            <br>
+            <button disabled>Disabled button</button>
+        </center>
+    </form>
+    
+</body>
+</html>

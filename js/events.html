@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            height:300vh;
+        }
+        #myDiv {
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine; 
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h2>mouse events</h2>
+    <form>
+        <label>enter name</label>
+        <input type="text" id="myInput">
+       
+        <br>
+        <br>
+         <button type="submit">submit</button>
+    </form>
+    <div id="myDiv"></div>
+    <input type="text">
+    
+    <script>
+        let box = document.getElementById('myDiv');
+        box.addEventListener('click',() => {
+            box.style.backgroundColor='red';
+        });
+        box.addEventListener('dbclick',() => {
+            box.style.backgroundColor='pink';
+        });
+        box.addEventListener('mouseover',() => {
+            box.style.backgroundColor='blue';
+        });
+        box.addEventListener('mouseout',() => {
+            box.style.backgroundColor='aqua';
+        });
+        box.addEventListener("mousemove",(e) => {
+            box.innerText=`X value:${e.offsetX} and Y value :${e.offsetY}`;
+            alert("warning:dont move outside the box");
+        });
+
+        //keyboard events
+        let i =document.querySelector("input");
+        i.addEventListener("keydown",()=>{
+            console.log("the key pressed is",event.key);
+        });
+        i.addEventListener("keyup",()=>{
+            console.log("the key released is",event.key);
+        });
+        i.addEventListener('keypress',(event)=>{
+            const pattern =/^[a-zA-Z]$/;
+            if(!pattern.test(event.key)){
+                event.preventDefault();
+            }
+        });
+        document.querySelector('form').addEventListener("submit",(e)=>{
+            e.preventDefault();
+            alert("form submitted");
+        });
+         document.querySelector('#myInput').addEventListener("focus",()=>{
+            
+            console.log("input focused");
+        });
+        document.querySelector('#myInput').addEventListener("blur",()=>{
+            
+            console.log("input unfocused");
+        });
+        document.querySelector('#myInput').addEventListener("change",(e)=>{
+            console.log(`input changed to ${e.target.value}`);
+        });
+        document.querySelector('#myInput').addEventListener("input",(e)=>{
+            console.log(`input is ${e.target.value}`);
+    
+        });
+        //window events
+        window.addEventListener("DOMContentLoaded",()=>{
+            alert("content loaded succcessfully");
+        });
+        window.addEventListener("scroll",()=>{
+            alert("window scrolled succcessfully",window.scrollY);
+        });
+        window.addEventListener("resize",()=>{
+            console.log("window resized succcessfully");
+        });
+
+
+
+
+
+    </script>
+</body>
+</html>

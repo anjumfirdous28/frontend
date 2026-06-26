@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="https://www.kodnest.com">kodnest</a>
+    
+    <button onclick="setattr()">setattribute</button>
+   <button onclick="getattr()">getattribute</button>
+    <button onclick="delattr()">delete attribute</button>
+   <script>
+    let link = document.querySelector("a");
+    function setattr(){
+        link.setAttribute("href","https://www.instagram.com");
+        link.innerText="click for insta";
+    }
+    function getattr(){
+        let url =link.getAttribute("href");
+        alert("url is"+url);
+    }
+    
+    function delattr(){
+        let url =link.removeAttribute("href");
+        alert("href attr removed");
+    }
+   </script>
+
+</body>
+</html>

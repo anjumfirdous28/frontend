@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .highlight{
+            background-color: blue;
+            color: pink;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="txt">hello all,welcome to class</h1>
+    <button onclick="addstyle()">add style</button>
+    <button onclick="removestyle()">remove style</button>
+    <button onclick="toggle()">toggle style</button>
+    <button onclick="contain()">contain style</button>
+ <script>
+    txt = document.getElementById("txt");
+    function addstyle(){
+        txt.classList.add('highlight');
+    }
+    function removestyle(){
+        txt.classList.remove('highlight');
+    }
+    function toggle(){
+        txt.classList.toggle('highlight');
+    }
+    function contain(){
+        if (txt.classList.contains('highlight')){
+            alert('highlight done');
+        }else {
+            alert('no highlighting');
+        }
+
+    }
+ </script>
+</body>
+</html>

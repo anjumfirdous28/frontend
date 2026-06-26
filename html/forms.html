@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 style="text-align: center;">captcha form</h2>
+    <center>
+    <form action="#" method="post" autocomplete="on">
+        <br>
+        <fieldset>
+            <legend >personal info</legend>
+        <label for="name">Name of user</label>
+        <input type="text" id="name">
+        <br>
+        <br>
+        <label>PASSWORD</label>
+        <input type="password">
+        <br>
+        <br>
+        <label>Age:</label>
+        <input type="number" min="1" max="100">
+        <br>
+        <br>
+        <label>Date of birth:</label>
+        <input type="date">
+        <br>
+        <br>
+    </fieldset>
+        <label>Time of birth</label>
+        <input type="time">
+        <br>
+        <br>
+        <label>profile url</label>
+        <input type="url">
+        <br>
+        <br>
+        <label>Secret number</label>
+        <input type="hidden">
+        <br>
+        <br>
+        <label>Week of joining</label>
+        <input type="week">
+        <br>
+        <br>
+        <label>Browze</label>
+        <input type="search">
+        <br>
+        <br>
+        <label>Salary range</label>
+        <input type="range" min="20000" max="50000" name="salaryrange" value="0">
+        <br>
+        <br>
+        <label>Image of offer letter</label>
+        <input type="image" src="/media/harry2.jpeg" width="20%" height="10%">
+        <br>
+        <br>
+        <label>upload resume</label>
+        <input type="file">
+        <br>
+        <br>
+        <label for="captcha">enter caption</label>
+        <input type="text" id="captcha" placeholder="Enter captcha.." name="captcha">
+        <br>
+        <br>
+        <label><input type="checkbox" name="option1">upi</label>
+        <label><input type="checkbox" name="option2">cash</label>
+        <label><input type="checkbox" name="option3">razor pay</label>
+        <label><input type="checkbox" name="option4">COD</label>
+        <br>
+        <br>
+        <label>gender</label>
+        <label><input type="radio" name="opt" value="male">male</label>
+        <label><input type="radio" name="opt" value="female">female</label>
+        <br>
+        <br>
+        <label for="tech">Choose the techstack:</label>
+        <select name="techstack" id="tech" multiple>
+            <option valur="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JAVA SCRIPT</option>
+            <option value="selenium">SELENIUM</option>
+    
+        </select>
+        <br>
+        <br>
+        <label for ="comments">Your comments</label>
+        <textarea id="comments" cols="40" rows="5" placeholder="your comment" name="comments">Enter comments</textarea>
+        <input type="submit">&nbsp &nbsp &nbsp
+       <input type="reset" value="cancel">
+       <br>
+       <br>
+       <button type="button">help center</button>
+       
+    </fieldset></center>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: aqua;
+            color: aliceblue;
+            animation-name: colorchange;
+            animation-duration: 3s;
+        }
+        h1 {
+            animation-name: fadein;
+            animation-duration: 10s;
+        }
+        p {
+            animation-name: slidein;
+            animation-duration: 6s;
+        }
+        @keyframes colochange {
+            from {background-color: red;}
+            to {background-color: white;}
+        }
+        @keyframes colorchange {
+            20% {background-color: red;}
+            40% {background-color: white;}
+            60% {background-color: aqua;} 
+            80% {background-color: orangered;}
+            100% {background-color: yellow;}
+
+        }
+        @keyframes fadein {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @keyframes slidein {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>animataions in css</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis molestias nulla delectus nemo optio dolore cupiditate facere animi maxime modi ex perferendis impedit, dolorum, expedita quam dolores minus quaerat? Dolorem.</p>
+</body>
+</html>
